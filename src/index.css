@@ -20,6 +20,9 @@ code {
   position: relative;
 }
 
+.details2 {
+  position: relative;
+}
 .details::before {
   content: '';
   position: absolute;
@@ -39,5 +42,62 @@ code {
   width: 10%;
   height: 4px;
   background-color: white;
-  z-index: 50000;
+}
+
+.details2::before {
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 38%;
+
+  width: 10%;
+  height: 4px;
+  background-color: black;
+}
+
+.details2::after {
+  content: '';
+  position: absolute;
+  top: 55%;
+  right: 38%;
+  width: 10%;
+  height: 4px;
+  background-color: black;
+}
+
+.layer {
+  background-color: #1abc9ce6;
+  position: absolute;
+  width: 100%;
+
+  left: 0;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  bottom: 0;
+  cursor: pointer;
+  transition: 0.6s opacity;
+}
+
+.img-container:hover .layer {
+  opacity: 1;
+}
+
+.modal {
+  background-color: rgba(13, 110, 253, 0.4);
+}
+
+/* NavLink .active {
+  color: red;
+} */
+
+.hi {
+  color: white !important;
+  text-decoration: none;
+}
+
+.hi.active {
+  background-color: rgb(26, 188, 156);
+  padding: 0.5rem;
+  border-radius: 5px;
 }

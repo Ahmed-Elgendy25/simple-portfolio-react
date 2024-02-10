@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -7,9 +8,9 @@ function Navbar() {
       style={{ backgroundColor: '#2C3E50' }}
     >
       <div className="container">
-        <a className="navbar-brand text-white fs-2 fw-bold" href="#">
+        <NavLink className="navbar-brand text-white fs-2 fw-bold" to="home">
           START FRAMEWORK
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -24,20 +25,20 @@ function Navbar() {
         <div className="collapse navbar-collapse " id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto fw-bolder gap-4 mb-2 mb-lg-0  ">
             <li className="nav-item">
-              <a className="nav-link active " aria-current="page" href="#">
+              <NavLink className="hi" aria-current="page" to="about">
                 ABOUT
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink className="hi" to="portfolio">
                 PORTFOLIO
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink className="hi" to="contact">
                 CONTACT
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

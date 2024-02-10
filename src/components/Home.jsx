@@ -1,6 +1,7 @@
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import Header from './Header';
 //
 function Home() {
   return (
@@ -14,12 +15,10 @@ function Home() {
             <img
               src="/assets/avataaars.svg"
               style={{ width: '250px' }}
+              className="py-3"
               alt="person"
             />
-            <h2 className="fw-bold  text-white fs-1">START FRAMEWORK</h2>
-            <div className="details  w-100">
-              <FontAwesomeIcon icon={faStar} className="  text-white" />
-            </div>
+            <Header />
             <p className="my-2 text-white">
               Graphic Artist - Web Designer - Illustrator
             </p>
