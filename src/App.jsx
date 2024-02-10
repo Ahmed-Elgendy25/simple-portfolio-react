@@ -9,11 +9,11 @@ import Contact from './components/Contact.jsx';
 
 // Routing
 
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout.jsx';
 
 function App() {
-  const routes = createBrowserRouter([
+  const routes = createHashRouter([
     {
       path: '/',
       element: <MainLayout />,
